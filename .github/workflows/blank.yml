@@ -19,7 +19,6 @@ jobs:
       with:
         host: ec2-13-58-176-94.us-east-2.compute.amazonaws.com
         username: ubuntu
-        key: ${{ secrets.RISE_SECRET }}
         password: rise@2020
         port: 22
         script: cd /var/www/html && sudo mkdir testFolder
