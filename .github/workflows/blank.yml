@@ -17,9 +17,9 @@ jobs:
     - name: Setup SSH
       uses: appleboy/ssh-action@master
       with:
-        host: ec2-13-58-176-94.us-east-2.compute.amazonaws.com
+        host: ec2-3-127-149-11.eu-central-1.compute.amazonaws.com
         username: ubuntu
-        key: ${{ secrets.RISE_SECRET }}
+        password: ${{ secrets.RISE_SECRET }}
         port: 22
         script: cd /var/www/html && sudo mkdir testFolder
    
